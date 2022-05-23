@@ -14,6 +14,7 @@ const PokemonList = () => {
       addPokemons(data.results);
     };
     fetchPokemons();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
