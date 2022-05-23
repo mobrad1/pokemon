@@ -11,3 +11,131 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.pokemon-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.pokemon-table td, .pokemon-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+ h4{
+   text-align: left;
+ }
+.pokemon-table tr:nth-child(even){background-color: #f2f2f2;}
+
+.pokemon-table tr:hover {background-color: #ddd;}
+
+.pokemon-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #04AA6D;
+  color: white;
+}
+.pokemon-detail-header{
+  text-align: center;
+  padding:10px;
+}
+.pokemon-detail-body{
+  display: flex;
+}
+a{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #04AA6D;
+}
+a:visited{
+  color: #04AA6D;
+}
+ul{
+  list-style: none;
+  width: 50%;
+  margin: 0 auto;
+  padding: 0px;
+}
+li{
+  display:flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  box-shadow: 1px 2px 1px 1px whitesmoke;
+  color: lightblue;
+  padding: 5px;
+}
+button{
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.pokemon-image img{
+  width:300px;
+  border:1px solid gray;
+  border-radius: 8px;
+  height: 300px;
+}
+.pokemon-description{
+  width: 100%;
+  padding: 10px;
+}
+.pokemon-types > div{
+  display: flex;
+  flex-wrap: wrap;
+}
+.pokemon-moves > div{
+  display: flex;
+  flex-wrap: wrap;
+}
+.link{
+  margin-right: 2px;
+  margin-left:2px;
+}
+.pokemon-move-item{
+  background-color: rgb(49, 190, 255);
+  padding: 3px;
+  margin:2px;
+  border-radius: 2px;
+  color: white;
+  font-size: 0.9rem;
+}
+.pokemon-type-item{
+  background-color: seagreen;
+  padding: 3px;
+  margin:2px;
+  border-radius: 2px;
+  color: white;
+  font-size: 0.9rem;
+}
+.text-black{
+  color: black;
+}
+#root{
+  width:50%;
+  margin:0px auto;
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  #root{
+    width:100%;
+  }
+  ul{
+    width: 80%;
+  }
+  .pokemon-detail-body{
+    flex-direction: column;
+  }
+  .pokemon-types div{
+    display: flex;
+    justify-content: center;
+  }
+  h4{
+    text-align: center;
+  }
+}
